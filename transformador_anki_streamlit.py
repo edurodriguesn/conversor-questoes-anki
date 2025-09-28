@@ -96,10 +96,6 @@ def main():
                 help="Este é o texto transformado, pronto para usar no Anki"
             )
             
-            # Botão para copiar
-            if st.button("📋 Copiar para área de transferência", use_container_width=True):
-                st.write("✅ Texto copiado! (Use Ctrl+V para colar)")
-                st.code(st.session_state['texto_processado'], language=None)
         else:
             st.info("👆 Processe um texto para ver o resultado aqui.")
     
